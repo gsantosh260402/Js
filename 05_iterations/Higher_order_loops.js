@@ -80,3 +80,24 @@ function printMe(item){
 }
 
 coding.forEach(printMe);
+
+// ********** A Array of Object **************
+
+const myCoding = [
+    {
+        languageName: "javascript" , 
+        languageFileName:"js" ,    
+    } , 
+    {
+        languageName: "java" , 
+        languageFileName:"java" ,    
+    },
+    {
+        languageName: "python" , 
+        languageFileName:"py" ,    
+    }
+]
+
+myCoding.forEach((item)=>{
+     console.log(`${item.languageName} : ${item.languageFileName}`);    
+})
