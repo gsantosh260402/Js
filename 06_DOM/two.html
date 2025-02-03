@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">Hello world</span></h1>
+        <h2 class="list-item">Lorem ipsum dolor sit.</h2>
+        <h2 class="list-item">Lorem ipsum dolor sit.</h2>
+        <h2 class="list-item">Lorem ipsum dolor sit.</h2>
+        <h2 class="list-item">Lorem ipsum dolor sit.</h2>
+
+        <p>Lorem ipsum dolor sit amet.</p>  
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
+
+<!--
+textContent and InnerText
+
+<h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">Hello world</span></h1>
+
+1) textContent :      all the content will style display:none also will shown
+*******************
+
+2) innerText :    the content with style display:none is not displayed
+***************
+
+3) innerHTML : 'DOM learning on Chai aur code <span style="display: none;">Hello world</span>'
+****************
+               it will give the styles and attributes also like a html element.
+
+
+     Difference b/w querySelector and querySelectorAll
+**************************************************************
+
+1) querySelector   -  
+********************
+document.querySelector('h1')  -> give a h1 the first h1 tag element
+                                 we can store it in a normal variable.
+
+
+2) querySelectorAll() :-
+***************************
+
+document.querySelectorAll('h1')  -> give all h1 in the in the html page in a nodeList datastructure
+
+
+
+const tempLiList = document.querySelectorAll('li');
+
+tempLiList.forEach((item)=>{
+    item.style.backgroundColor = 'green';
+})
+
+
+3) document.getElementsByClassName()  
+***************************************
+
+will give us all the elements with that classname in a HTML Collection
+
+but the cons of HTML Collection is that we can't use loops with it like in on Arrays
+
+to convert HTML Collections to Array 
+**************************************
+
+   ********* const newArr = Array.from(tempClassList);********
+   
+newArr.forEach((item)=>{
+    console.log(item);
+})
+
+ -->
